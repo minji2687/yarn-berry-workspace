@@ -1,11 +1,11 @@
-import { sayHello } from "@wanted/lib";
-import { Button } from "@wanted/ui";
-import { Inter } from "next/font/google";
-import Head from "next/head";
-import Image from "next/image";
-import styles from "@/styles/Home.module.css";
+import { sayHello } from '@wanted/lib';
+import { Button } from '@wanted/ui';
+import { Inter } from 'next/font/google';
+import Head from 'next/head';
+import Image from 'next/image';
+import styles from '@/styles/Home.module.css';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -18,16 +18,15 @@ export default function Home() {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
         <div className={styles.description}>
-          <p>의존성 테스트 {sayHello("wanted app")}</p>
-          <Button variant="contained">버튼 컴포넌트</Button>
-          {/* <Button>버튼 컴포넌트</Button> */}
+          <p>의존성 테스트 {sayHello()}</p>
+          <Button>버튼 컴포넌트</Button>
           <div>
             <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
             >
-              By{" "}
+              By{' '}
               <Image
                 src="/vercel.svg"
                 alt="Vercel Logo"
